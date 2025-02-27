@@ -1,8 +1,12 @@
-{
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "news_project/wsgi.py"
-    }
-  ]
+"builds": [{
+        "src": "news_project/wsgi.py",
+        "use": "@ardnt/vercel-python-wsgi",
+        "config": { "maxLambdaSize": "15mb" }
+    }],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "news_project/wsgi.py"
+        }
+    ]
 }
