@@ -22,7 +22,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "whitenoise.runserver_nostatic",  # For serving static files in production
+    "whitenoise.runserver_nostatic",
+    "news_app",
 ]
 
 # Middleware
